@@ -25,7 +25,7 @@ WORKDIR /app/backend
 COPY ./backend/package-lock.json ./backend/package.json ./
 RUN npm ci --no-optional --only=production
 
-FROM registry.ci.openshift.org/stolostron/common-nodejs-parent:release-2.4.x@sha256:75b28cbe2fca2f1e2a360482ff30515c8ab4e49c2423530a3cf7e13eb2741d3a
+FROM registry.ci.openshift.org/stolostron/common-nodejs-parent-2-4-x:release-2.4.x@sha256:75b28cbe2fca2f1e2a360482ff30515c8ab4e49c2423530a3cf7e13eb2741d3a
 WORKDIR /app
 ENV NODE_ENV production
 COPY --from=production /app/backend/node_modules ./node_modules

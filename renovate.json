@@ -5,6 +5,6 @@
   ],
   "enabledManagers": ["dockerfile"],
   "registryAliases": {
-    "registry.ci.openshift.org/stolostron/common-nodejs-parent": "quay.io/redhat-user-workloads/sdouglas1-tenant/operator-test-1-2-x/common-nodejs-parent-2-4-x"
+    "registry.ci.openshift.org/stolostron": "quay.io/redhat-user-workloads/sdouglas1-tenant/operator-test-1-2-x"
   }
 }
