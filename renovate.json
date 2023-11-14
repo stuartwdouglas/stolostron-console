@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "enabledManagers": ["dockerfile"],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["registry.ci.openshift.org/stolostron/common-nodejs-parent"],
+      "replacementName": "registry.ci.openshift.org/stolostron/common-nodejs-parent",
+      "replacementVersion": "sha256:75b28cbe2fca2f1e2a360482ff30515c8ab4e49c2423530a3cf7e13eb2741d3b"
+    }
+  ]
+}
