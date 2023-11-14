@@ -4,7 +4,12 @@
     "config:recommended"
   ],
   "enabledManagers": ["dockerfile"],
-  "registryAliases": {
-    "registry.ci.openshift.org/stolostron": "quay.io/redhat-user-workloads/sdouglas1-tenant/operator-test-1-2-x"
-  }
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["registry.ci.openshift.org/stolostron/common-nodejs-parent-2-4-x"],
+      "replacementName": "registry.ci.openshift.org/stolostron/common-nodejs-parent-2-4-x",
+      "replacementVersion": "sha256:75b28cbe2fca2f1e2a360482ff30515c8ab4e49c2423530a3cf7e13eb2741d3b"
+    }
+  ]
 }
